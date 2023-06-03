@@ -36,7 +36,7 @@ public class CoffeeShopApp extends Application {
         grid.setHgap(5);
         // Set the background image
         try {
-            Image bg = new Image("A:\\Java apps\\Cafe\\src\\Images\\bg.jpg");
+            Image bg = new Image("C:\\Users\\ziad ahmed\\Documents\\GitHub\\Cafe\\src\\Images.jpg");
             BackgroundImage bgi = new BackgroundImage(bg, BackgroundRepeat.REPEAT,
                     BackgroundRepeat.REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
             grid.setBackground(new Background(bgi));
