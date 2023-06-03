@@ -36,7 +36,7 @@ public class CoffeeShopApp extends Application {
         grid.setHgap(5);
         // Set the background image
         try {
-            Image bg = new Image("C:\\Users\\ziad ahmed\\Documents\\GitHub\\Cafe\\src\\Images.jpg");
+            Image bg = new Image("C:\\Users\\ziad ahmed\\Documents\\GitHub\\Cafe\\src\\Images\\bg.jpg");
             BackgroundImage bgi = new BackgroundImage(bg, BackgroundRepeat.REPEAT,
                     BackgroundRepeat.REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
             grid.setBackground(new Background(bgi));
@@ -115,7 +115,7 @@ public class CoffeeShopApp extends Application {
         // Add buttons for menu items
         Button coffeeButton = new Button("Coffee");
         try {
-            Image coffeeimage = new Image("A:\\Java apps\\Cafe\\src\\Images\\coffee.png");
+            Image coffeeimage = new Image("C:\\Users\\ziad ahmed\\Documents\\GitHub\\Cafe\\src\\Images\\coffee.png");
             ImageView coffeeimageView = new ImageView(coffeeimage);
             coffeeimageView.setFitWidth(100); // Adjust the width of the image as needed
             coffeeimageView.setFitHeight(100);
@@ -137,7 +137,7 @@ public class CoffeeShopApp extends Application {
             System.out.println("we added tea"+" the price  is "+tea.getTotalPrice());
         });
         try {
-            Image teaimage = new Image("A:\\Java apps\\Cafe\\src\\Images\\tea.png");
+            Image teaimage = new Image("C:\\Users\\ziad ahmed\\Documents\\GitHub\\Cafe\\src\\Images\\tea.png");
             ImageView teaImageView = new ImageView(teaimage);
             teaImageView.setFitWidth(100); // Adjust the width of the image as needed
             teaImageView.setFitHeight(100);
@@ -157,7 +157,7 @@ public class CoffeeShopApp extends Application {
 
         });
         try {
-            Image waterimage = new Image("A:\\Java apps\\Cafe\\src\\Images\\water.png");
+            Image waterimage = new Image("C:\\Users\\ziad ahmed\\Documents\\GitHub\\Cafe\\src\\Images\\water.png");
             ImageView waterimageview = new ImageView(waterimage);
             waterimageview.setFitHeight(100);
             waterimageview.setFitWidth(100);
@@ -168,7 +168,7 @@ public class CoffeeShopApp extends Application {
         }
         Button cartB = new Button("cart");
         try {
-            Image cartImage = new Image("A:\\Java apps\\Cafe\\src\\Images\\cart.jpg");
+            Image cartImage = new Image("C:\\Users\\ziad ahmed\\Documents\\GitHub\\Cafe\\src\\Images\\cart.jpg");
             ImageView cartImageView = new ImageView(cartImage);
             cartImageView.setFitWidth(100); // Adjust the width of the image as needed
             cartImageView.setFitHeight(100); // Adjust the height of the image as needed
@@ -180,7 +180,7 @@ public class CoffeeShopApp extends Application {
         cartB.setOnAction(e-> showCart());
         Button back = new Button("back");
         try {
-            Image backiamge = new Image("A:\\Java apps\\Cafe\\src\\Images\\back.png");
+            Image backiamge = new Image("C:\\Users\\ziad ahmed\\Documents\\GitHub\\Cafe\\src\\Images\\back.png");
             ImageView backimageview = new ImageView(backiamge);
             backimageview.setFitWidth(100); // Adjust the width of the image as needed
             backimageview.setFitHeight(100);
@@ -191,7 +191,7 @@ public class CoffeeShopApp extends Application {
         }
         back.setOnAction(e-> start(primaryStage));
         try {
-            Image bg = new Image("A:\\Java apps\\Cafe\\src\\Images\\star.jpg");
+            Image bg = new Image("C:\\Users\\ziad ahmed\\Documents\\GitHub\\Cafe\\src\\Images\\star.jpg");
             BackgroundImage bgi = new BackgroundImage(bg, BackgroundRepeat.REPEAT,
                     BackgroundRepeat.REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
 
@@ -209,7 +209,7 @@ public class CoffeeShopApp extends Application {
 
 
         Scene scene = new Scene(grid, 1300, 1000);
-        primaryStage.setResizable(false);
+        primaryStage.setResizable(true);
         primaryStage.setScene(scene);
 
 
@@ -252,7 +252,7 @@ public class CoffeeShopApp extends Application {
                showMenuScreen(cartStage);
            });
            try {
-               Image bg = new Image("A:\\Java apps\\Cafe\\src\\Images\\star.jpg");
+               Image bg = new Image("C:\\Users\\ziad ahmed\\Documents\\GitHub\\Cafe\\src\\Images\\star.jpg");
                BackgroundImage bgi = new BackgroundImage(bg, BackgroundRepeat.REPEAT,
                        BackgroundRepeat.REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
 
@@ -267,7 +267,8 @@ public class CoffeeShopApp extends Application {
         pane.add(backButton,0,3);
         pane.add(Pay,4,4);
 
-        Scene scene = new Scene(pane, 1300, 1000);
+        Scene scene = new Scene(pane, 800, 800);
+        cartStage.setResizable(true);
         cartStage.setScene(scene);
         cartStage.show();
 
