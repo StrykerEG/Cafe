@@ -60,7 +60,7 @@ public class RegisterWindowApp extends Application {
             Image backImage = new Image("A:\\Java apps\\Cafe\\src\\Images\\back.png");
             ImageView backimageview = new ImageView(backImage);
             backimageview.setFitWidth(24); // Adjust the width of the image as needed
-            backimageview.setFitHeight(24);
+            backimageview.setFitHeight(24);// Adjust the height of the image as needed
             backButton.setGraphic(backimageview);
         }catch (Exception E)
         {
@@ -74,6 +74,7 @@ public class RegisterWindowApp extends Application {
         registerButton.setOnAction(event -> {
             String username = usernameField.getText();
             String password = passwordField.getText();
+            //data of sql server host
             final String DB_URL = "jdbc:mysql://localhost:3306/ziad";
             final String DB_USERNAME = "root";
             final String DB_PASSWORD = "password123!";

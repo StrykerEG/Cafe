@@ -68,6 +68,9 @@ public class PaymentGUI extends PaymentSystem
         alert.showAndWait();
     }
 
-
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 
 }

@@ -16,18 +16,26 @@ public class PaymentSystem
     }
 
     public PaymentSystem() {
+        this.payment = 0;
+        this.charge = 0 ;
+    }
+    //constructor overload
+    public PaymentSystem(int payment,int charge)
+    {
+        this.payment = payment;
+        this.charge = charge;
 
     }
 
     public double getCharge()
     {
         return charge;
-    }
+    }//getting all charge as double result
 
     public double getPayment()
     {
         return payment;
-    }
+    }//getting all payments as double result
 
     public double calculateCharge()
     {
@@ -38,6 +46,6 @@ public class PaymentSystem
     public boolean Valdis()
     {
         return user.getBalance() > payment ;
-    }
+    }//if user has money more than the payment
 
 }

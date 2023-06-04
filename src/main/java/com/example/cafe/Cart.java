@@ -36,7 +36,7 @@ public class Cart
         }
         return total;
     }
-
+        //print every item in the array list
     public void printItems() {
         for (CoffeeItem item : items) {
             System.out.println(item.getName() + " - $" + item.getPrice());
