@@ -42,6 +42,7 @@ public class PaymentGUI extends PaymentSystem
 }
 
     private void processPayment() {
+        //get the payment from amount and find if it is valid or not
         try {
             double amount = Double.parseDouble(amountField.getText());
             PaymentSystem paymentSystem = new PaymentSystem(amount,getCharge());

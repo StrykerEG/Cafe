@@ -82,7 +82,7 @@ public class CoffeeShopApp extends Application {
             RegisterWindowApp r = new RegisterWindowApp();
             r.show(primaryStage);
 
-            String username = usernameField.getText();
+            String username = usernameField.getText();//getting all password information as string
             String password = passwordField.getText();
             coffeeShopSystem.registerUser(username,password);
 
@@ -100,7 +100,7 @@ public class CoffeeShopApp extends Application {
     }
 
     private void showMenuScreen(Stage primaryStage) {
-
+        //showing menu screen
         GridPane grid = new GridPane();
         grid.setPadding(new Insets(20));
         grid.setVgap(10);
